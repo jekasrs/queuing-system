@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            style="-fx-background-color: #3a3a3a; -fx-padding: 0 10 10 10;"
+            fx:controller="la.smi.queuingsystem.controller.DebuggingController">
+    <center>
+    </center>
+    <right></right>
+    <left></left>
+    <bottom>
+        <HBox alignment="CENTER" style="-fx-padding: 0 10 10 10; -fx-spacing: 200">
+            <Button HBox.hgrow="ALWAYS" text="Prev Step"
+                    textFill="#f1f1f1"
+                    textAlignment="CENTER"
+                    style="-fx-background-color: #57a566; -fx-font-size: 15;"
+                    minWidth="150"
+                    onAction="#onPrevStep"/>
+            <Button HBox.hgrow="ALWAYS" text="Next Step"
+                    textFill="#f1f1f1"
+                    textAlignment="CENTER"
+                    style="-fx-background-color: #57a566; -fx-font-size: 15"
+                    minWidth="150"
+                    onAction="#onNextStep"/>
+        </HBox>
+    </bottom>
+</BorderPane>

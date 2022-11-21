@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+
+<VBox alignment="CENTER" style="-fx-background-color: #3a3a3a"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="la.smi.queuingsystem.controller.MainController"
+      maxWidth="1200" maxHeight="750"
+      minWidth="800"  minHeight="500">
+
+    <VBox alignment="CENTER" style="-fx-padding: 0 0 30 0;">
+        <Label text="Bids" textFill="#c6c6c6" style="-fx-font-size: 15"/>
+        <TextField fx:id="edit_text_bids" maxWidth="100" promptText="999" prefWidth="90" style="-fx-font-size: 15"/>
+    </VBox>
+
+    <HBox alignment="CENTER" spacing="10" style="-fx-padding: 0 0 30 0;">
+        <VBox alignment="CENTER" VBox.vgrow="ALWAYS" >
+            <Label text="Generators" textFill="#c6c6c6" style="-fx-font-size: 15"/>
+            <TextField fx:id="edit_text_gens" maxWidth="100" promptText="10" prefWidth="90" style="-fx-font-size: 15"/>
+        </VBox>
+        <VBox alignment="CENTER" VBox.vgrow="ALWAYS" >
+            <Label text="Workers" textFill="#c6c6c6" style="-fx-font-size: 15"/>
+            <TextField fx:id="edit_text_works" maxWidth="100" promptText="5" prefWidth="90" style="-fx-font-size: 15"/>
+        </VBox>
+        <VBox alignment="CENTER" VBox.vgrow="ALWAYS" >
+            <Label text="Buffer" textFill="#c6c6c6" style="-fx-font-size: 15"/>
+            <TextField fx:id="edit_text_buff" maxWidth="100" promptText="10" prefWidth="90" style="-fx-font-size: 15"/>
+        </VBox>
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10" style="-fx-padding: 0 0 30 0;">
+        <VBox alignment="CENTER" VBox.vgrow="ALWAYS" >
+            <Label text="Alpha" textFill="#c6c6c6" style="-fx-font-size: 15"/>
+            <TextField fx:id="edit_text_alpha" maxWidth="100" promptText="1" prefWidth="90" style="-fx-font-size: 15"/>
+        </VBox>
+        <VBox alignment="CENTER" VBox.vgrow="ALWAYS"  >
+            <Label text="Beta" textFill="#c6c6c6" style="-fx-font-size: 15"/>
+            <TextField fx:id="edit_text_beta" maxWidth="100" promptText="10" prefWidth="90" style="-fx-font-size: 15"/>
+        </VBox>
+            <VBox alignment="CENTER" VBox.vgrow="ALWAYS" >
+                <Label text="Lambda" textFill="#c6c6c6" style="-fx-font-size: 15"/>
+                <TextField fx:id="edit_text_lambda" maxWidth="100" promptText="0.1" prefWidth="90" style="-fx-font-size: 15"/>
+        </VBox>
+    </HBox>
+
+    <Button text="Start Modelling"
+            textFill="#f1f1f1"
+            textAlignment="JUSTIFY"
+            style="-fx-background-color: #57a566; -fx-padding: 10 0 10 0; -fx-font-size: 15"
+            alignment="BASELINE_CENTER"
+            minWidth="150"
+            onAction="#onStartModelling"/>
+
+    <Button text="Start Modelling"
+            textFill="#f1f1f1"
+            textAlignment="JUSTIFY"
+            style="-fx-background-color: #57a566; -fx-padding: 10 0 10 0; -fx-font-size: 15"
+            alignment="BASELINE_CENTER"
+            minWidth="150"
+            onAction="#onTableStart"/>
+
+</VBox>
